@@ -1,5 +1,5 @@
 import './App.css';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './Navbar';
 import Header from './components/Header/header';
 import Controls from './components/Controls/controls';
@@ -74,7 +74,7 @@ function App() {
     return (
         <Router>
             <Navbar setSettingsVisible={setSettingsVisible} />
-            <Routes>
+            <Switch>
                 <Route path="/" element={<Home />} />
                 <Route
                     path="/pomodoro-app"
@@ -126,7 +126,7 @@ function App() {
                                         />
                             </div>
                         } />
-            </Routes>
+            </Switch>
         </Router>
     );
 };
