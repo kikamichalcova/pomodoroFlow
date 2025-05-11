@@ -2,10 +2,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  
 }
 
 html{
-  overflow-y: scroll; /* Scrollbar bude vždy viditeľný */
+  overflow-y: scroll;
 }
 
 html,
@@ -14,9 +15,11 @@ body {
 }
 
 body {
-  display: flex;
-  justify-content: center;
   background: var(--background-body);
+  padding-bottom: 40px;
+}
+.main-content {
+  margin-bottom: 40px;
 }
 
 h1 {
@@ -28,38 +31,47 @@ h1 {
   font-size: 24px;
   line-height: 24px;
   margin-top: 32px;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 h2 {
   font-family: "Kumbh Sans", sans-serif;
   color: var(--text);
+  margin-top: 25px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 h3 {
+  font-size: small;
   font-family: var(--font-default);
   color: var(--text);
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .p-first{
-  margin-top:55px;
   font-family: "Kumbh Sans", sans-serif;
   color: var(--accent-color);
+  line-height: 1.5;
+  text-align: center;
 }
 
 .p-second{
   font-family: "Kumbh Sans", sans-serif;
   color: var(--accent-color);
+  line-height: 1.5;
 }
 
 .p-third{
   font-family: "Kumbh Sans", sans-serif;
   color: var(--accent-color);
+  line-height: 1.5;
 }
 
 .home-button {
-  display: flex;
-  align-items: center;
+  display: block;
+  margin: 40px auto;
   height: 48px;
   border: none;
   border-radius: 26.5px;
@@ -74,25 +86,35 @@ h3 {
   color: var(--text);
   mix-blend-mode: normal;
   cursor: pointer;
+  transition: transform 0.15s ease-in-out;
+}
+
+.home-button:hover {
+  transform: scale(1.10);
+  cursor: pointer;
 }
 
 
-/*.first-container {
- display: flex;
+.first-container {
+ width: 89%;
+ margin-bottom: 10px;
 }
 
 .second-container {
-  display: flex;
+  width: 89%;
+  margin-bottom: 10px;
 }
 
 .third-container {
-display: flex;
+  width: 89%;
+  margin-bottom: 10px;
 }
 
 .fourth-container {
-display: flex;
+  width: 89%;
+  margin-bottom: 10px;
 }
-*/
+
 
 @media screen and (min-width: 600px) {
   h1 {
